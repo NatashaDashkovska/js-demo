@@ -72,7 +72,3 @@ if (countryName === null) {
 if (price > 0) {
   message = `Доставка в ${countryName} будет стоить ${price} кредитов`;
 }
-
-console.log(message);
-console.log(countryName);
-console.log(price);
