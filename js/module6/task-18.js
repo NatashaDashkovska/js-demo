@@ -13,7 +13,9 @@ import { users } from '../../users.js';
 
 // Пиши код ниже этой строки
 const getFriends = users => {
-  return users.flatMap(user => user.friends);
+  return users
+    .flatMap(user => user.friends)
+    .filter((friend, idx, friends) => friends.indexOf(friend) === idx);
 };
 // Пиши код выше этой строки
 
